@@ -586,7 +586,7 @@ contains
 #else
    if(ktau.eq.1) then
 #endif
-     if(.not. restart .or. .not. cycling) then
+     if(.not. restart .and. .not. cycling) then
       do j=jts,jte
          do i=its,ite
             do k=1,nsl
