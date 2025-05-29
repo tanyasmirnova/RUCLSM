@@ -384,7 +384,7 @@ contains
 #else
    if(ktau.eq.1) then
 #endif
-    if(.not. restart .or. .not. cycling) then
+    if(.not. restart .and. .not. cycling) then
 !--- initialize ice/snow variables at the first time step
       do j=jts,jte
          do i=its,ite
