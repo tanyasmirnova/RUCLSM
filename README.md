@@ -46,10 +46,12 @@ MPAS has separate modules for RUC land and ice components called out of lsm_driv
 Modules: module_ruc_ice mand module_ruc_land
 
 Subroutines include:
-  sfctmp - top subroutine to compute evergy and moisture budgets
+  sfctmp - top subroutine to compute evergy and moisture budgets.
+  
   soil - this subroutine calculates energy and moisture budget for vegetated surfaces without snow, and heat diffusion and Richards eqns in soil. 
          - it calls soiltemp subroutine to update soil temerature and skin temprature.
-         - it calls soilmoist subroutine to compute soil moisture and surface runoff
+         - it calls soilmoist subroutine to compute soil moisture and surface runoff.
+         
   snowsoil - this subroutine is called for snow covered areas of land. It solves energy and moisture budgets on the surface of snow, and on the interface of snow and             soil. 
           - it calls snowtemp subroutine to computes skin temperature, snow temperature, soil tmperature and moisture, surface runoff, snow depth and snow melt.
           - it calls soilmoist subroutine to compute soil moisture and surface runoff
