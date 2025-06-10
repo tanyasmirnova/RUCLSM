@@ -1,5 +1,5 @@
 # RUCLSM
-The RUC LSM repository, that includes implementations in CCPP (UFS), MPAS standalone and WRF.
+The RUC LSM repository, that includes implementations in CCPP (UFS), MPAS and WRF.
 
 This land surface model (LSM) was originally developed as part of the NOAA Rapid Update Cycle (RUC) model development effort; with ongoing modifications, it is now used as an option for the WRF, UFS (ccpp) and MPAS community models. The RUC weather model, its WRF-based NOAA successor, the Rapid Refresh (RAP) and High-Resolution Rapid Refresh (HRRR), and the UFS-vased RRFSv1 are hourly updated systems that have an emphasis on short-range, near-surface forecasts including aviation-impact variables and pre-convective environment. Coupling to this LSM (hereafter the RUC LSM) has proven to be critical to provide accurate lower boundary conditions into the atmospheric boundary layer of these models.
 
@@ -48,13 +48,16 @@ Modules: module_ruc_ice mand module_ruc_land
 Subroutines include:
   sfctmp - top subroutine to compute evergy and moisture budgets.
   
-  soil - this subroutine calculates energy and moisture budget for vegetated surfaces without snow, and heat diffusion and Richards eqns in soil. 
+  soil - this subroutine calculates energy and moisture budget for vegetated surfaces without snow, and heat diffusion and Richards eqns in soil.
+  
          - it calls soiltemp subroutine to update soil temerature and skin temprature.
          - it calls soilmoist subroutine to compute soil moisture and surface runoff.
          
   snowsoil - this subroutine is called for snow covered areas of land. It solves energy and moisture budgets on the surface of snow, and on the interface of snow and             soil. 
+  
           - it calls snowtemp subroutine to computes skin temperature, snow temperature, soil tmperature and moisture, surface runoff, snow depth and snow melt.
           - it calls soilmoist subroutine to compute soil moisture and surface runoff
+          
   soilprop - computes thermal diffusivity and diffusional and hydraulic conductivities.
   tranf - compoutes transpiration function.
   vilka - this subroutine finds the solution of energy budget at the surface from the pre-computed table of saturated water vapor mixing ratio and estimated surface              temperature. 
