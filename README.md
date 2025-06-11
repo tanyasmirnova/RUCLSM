@@ -66,9 +66,9 @@ Subroutines include:
      - It solves energy budget on the snow interface with atmosphere and snow interface with ice, calculates skin temperature, snow and ice temperatures, snow depth and snow melt. 
   
 CCPP argument list:
-local_name	standard_name	          long_name	                                            units	      type	   dimensions	kind	intent	optional
-iter	      ccpp_loop_counter	      loop counter for subcycling loops in CCPP	            index	     integer	   ()		     in          	False
-me	mpi_rank	current MPI-rank	index	integer	()		in	False
+- local_name	standard_name	          long_name	                                            units	      type	   dimensions	kind	intent	optional
+- iter	      ccpp_loop_counter	      loop counter for subcycling loops in CCPP	            index	     integer	   ()		           in     	False
+- me	        mpi_rank	              current MPI-rank	                                    index	     integer	   ()		           in	      False
 master	mpi_root	master MPI-rank	index	integer	()		in	False
 kdt	index_of_time_step	current number of time steps	index	integer	()		in	False
 im	horizontal_loop_extent	horizontal loop extent	count	integer	()		in	False
