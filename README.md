@@ -73,9 +73,9 @@ Local_name........standard_name............long_name............................
 - master.........mpi_root.............master MPI-rank....index.....integer.....().....in.....False
 - kdt............index_of_time_step...current number of time steps.....index.....integer.....().....in.....False
 - im.............horizontal_loop_extent....horizontal loop extent	count.....integer.....().....in.....False
-- nlev	vertical_dimension	number of vertical levels	count	integer	()		in	False
-- lsoil_ruc	soil_vertical_dimension_for_land_surface_model	number of soil layers internal to land surface model	count	integer	()		in	False
-- lsoil	soil_vertical_dimension	soil vertical layer dimension	count	integer	()		in	False
+- nlev...........vertical_dimension........number of vertical levels	count.....integer.....().....in.....False
+- lsoil_ruc......soil_vertical_dimension_for_land_surface_model.......number of soil layers internal to land surface model.....count.....integer.....().....in.....False
+- lsoil..........soil_vertical_dimension..............................soil vertical layer dimension............................count.....integer.....().....in.....False
 - zs	depth_of_soil_levels_for_land_surface_model	depth of soil levels for land surface model	m	real	(soil_vertical_dimension_for_land_surface_model)	kind_phys	inout	False
 - t1	air_temperature_at_lowest_model_layer	mean temperature at lowest model layer	K	real	(horizontal_dimension)	kind_phys	in	False
 - q1	water_vapor_specific_humidity_at_lowest_model_layer	water vapor specific humidity at lowest model layer	kg kg-1	real	(horizontal_dimension)	kind_phys	in	False
