@@ -46,13 +46,17 @@ RUC LSM has a land and a sea ice components.
 
 Main module in WRF and CCPP:
 -
-  module  	module_sf_ruclsm
+- module module_sf_ruclsm
  	
   This module contains both land and ice components of the RUC LSM model, which is a soil/veg/snowpack and ice/snowpack land-surface model to update soil moisture, soil/ice temperature, skin temperature, snowpack water content, snowdepth, and all terms of the surface energy balance and surface water balance.
 
+Main modules in MPAS
+-
 MPAS has separate modules for RUC land and ice components called out of lsm_driver and seaice_driver:
-Modules: module_ruc_ice mand module_ruc_land
 
+- module module_ruc_land
+- module module_ruc_ice
+  
 Subroutines include:
 -
   - sfctmp - top subroutine to compute evergy and moisture budgets.
