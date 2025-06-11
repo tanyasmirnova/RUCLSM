@@ -76,16 +76,16 @@ Local_name........standard_name............long_name............................
 - nlev...........vertical_dimension........number of vertical levels	count.....integer.....().....in.....False
 - lsoil_ruc......soil_vertical_dimension_for_land_surface_model.......number of soil layers internal to land surface model.....count.....integer.....().....in.....False
 - lsoil..........soil_vertical_dimension..............................soil vertical layer dimension............................count.....integer.....().....in.....False
-- zs	depth_of_soil_levels_for_land_surface_model	depth of soil levels for land surface model	m	real	(soil_vertical_dimension_for_land_surface_model)	kind_phys	inout	False
-- t1	air_temperature_at_lowest_model_layer	mean temperature at lowest model layer	K	real	(horizontal_dimension)	kind_phys	in	False
-- q1	water_vapor_specific_humidity_at_lowest_model_layer	water vapor specific humidity at lowest model layer	kg kg-1	real	(horizontal_dimension)	kind_phys	in	False
-- qc	cloud_condensed_water_mixing_ratio_at_lowest_model_layer	moist (dry+vapor, no condensates) mixing ratio of cloud water at lowest model layer	kg kg-1	real	(horizontal_dimension)	kind_phys	in	False
-- soiltyp	soil_type_classification	soil type at each grid cell	index	integer	(horizontal_dimension)		inout	False
-- vegtype	vegetation_type_classification	vegetation type at each grid cell	index	integer	(horizontal_dimension)		inout	False
-- sigmaf	vegetation_area_fraction	areal fractional cover of green vegetation	frac	real	(horizontal_dimension)	kind_phys	in	False
-- laixy	leaf_area_index	leaf area index	none	real	(horizontal_dimension)	kind_phys	in	False
-- sfcemis	surface_longwave_emissivity_over_land_interstitial	surface lw emissivity in fraction over land (temporary use as interstitial)	frac	real	(horizontal_dimension)	kind_phys	inout	False
-- dlwflx	surface_downwelling_longwave_flux	surface downwelling longwave flux at current time	W m-2	real	(horizontal_dimension)	kind_phys	in	False
+- zs.............depth_of_soil_levels_for_land_surface_model..........depth of soil levels for land surface model	m	real	(soil_vertical_dimension_for_land_surface_model).....kind_phys.....inout.....False
+- t1.............air_temperature_at_lowest_model_layer................mean temperature at lowest model layer............K.....real.....(horizontal_dimension).....kind_phys....in.....False
+- q1.............water_vapor_specific_humidity_at_lowest_model_layer....water vapor specific humidity at lowest model layer.....kg kg-1.....real.....(horizontal_dimension).....kind_phys.....in.....False
+- qc.............cloud_condensed_water_mixing_ratio_at_lowest_model_layer.....moist (dry+vapor, no condensates) mixing ratio of cloud water at lowest model layer.....kg kg-1.....real.....(horizontal_dimension).....kind_phys.....in.....False
+- soiltyp........soil_type_classification.............................soil type at each grid cell...........index.....integer.....(horizontal_dimension).....inout....False
+- vegtype........vegetation_type_classification.......................vegetation type at each grid cell.....index.....integer.....(horizontal_dimension).....inout....False
+- sigmaf.........vegetation_area_fraction.......areal fractional cover of green vegetation.....frac.....real.....(horizontal_dimension).....kind_phys.....in.....False
+- laixy..........leaf_area_index................leaf area index..........none.......real.......(horizontal_dimension)......kind_phys.....in.....False
+- sfcemis........surface_longwave_emissivity_over_land_interstitial....surface lw emissivity in fraction over land (temporary use as interstitial).....frac.....real....horizontal_dimension)	.....kind_phys.....inout......False
+- dlwflx.........surface_downwelling_longwave_flux.......surface downwelling longwave flux at current time.....W m-2.....real.....(horizontal_dimension).....kind_phys.....in......False
 - dswsfc	surface_downwelling_shortwave_flux	surface downwelling shortwave flux at current time	W m-2	real	(horizontal_dimension)	kind_phys	in	False
 - snet	surface_net_downwelling_shortwave_flux	surface net downwelling shortwave flux at current time	W m-2	real	(horizontal_dimension)	kind_phys	in	False
 - delt	time_step_for_dynamics	physics time step	s	real	()	kind_phys	in	False
