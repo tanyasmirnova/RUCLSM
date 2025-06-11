@@ -67,7 +67,7 @@ Subroutines include:
   
 CCPP argument list:
 
-Local_name........standard_name............long_name........................................units.......type.....dimensions...kind...intent...optional
+Local_name........standard_name............long_name....................................................units.......type.....dimensions...kind...intent...optional
 - iter..........ccpp_loop_counter.....loop counter for subcycling loops in CCPP.............index.......integer......()........in..............False
 - me	        mpi_rank	              current MPI-rank	                                    index	     integer	   ()		           in	      False
 master	mpi_root	master MPI-rank	index	integer	()		in	False
