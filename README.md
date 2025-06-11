@@ -48,7 +48,7 @@ Modules: module_ruc_ice mand module_ruc_land
 Subroutines include:
   - sfctmp - top subroutine to compute evergy and moisture budgets.
   
-  - soil - this subroutine calculates energy and moisture budget for vegetated surfaces without snow, and heat diffusion and Richards eqns in soil.\
+  - soil - this subroutine calculates energy and moisture budget for vegetated surfaces without snow, and heat diffusion and Richards eqns in soil.
     - it calls soiltemp subroutine to update soil temerature and skin temprature.
     - it calls soilmoist subroutine to compute soil moisture and surface runoff.
          
@@ -60,8 +60,10 @@ Subroutines include:
   - tranf - compoutes transpiration function.
   - vilka - this subroutine finds the solution of energy budget at the surface from the pre-computed table of saturated water vapor mixing ratio and estimated surface              temperature. 
   - soilvegin - this subroutine computes effective land and soil parameters in the grid cell from the weighted contribution of soil and land categories represented in              the grid cell. 
-  - sice - this subroutine is called for sea ice without accumulated snow on its surface. it solves heat diffusion inside ice and energy budget at the surface of ice. It           computes skin temperature and temerature inside sea ice. 
-  - snowseaice - this subroutine is called for sea ice with accumulated snow on its surface. It solves energy budget on the snow interface with atmosphere and snow                 interface with ice. It calculates skin temperature, snow and ice temperatures, snow depth and snow melt. 
+  - sice - this subroutine is called for sea ice without accumulated snow on its surface.
+     - it solves heat diffusion inside ice and energy budget at the surface of ice, computes skin temperature and temerature inside sea ice.
+  - snowseaice - this subroutine is called for sea ice with accumulated snow on its surface.
+     - It solves energy budget on the snow interface with atmosphere and snow interface with ice, calculates skin temperature, snow and ice temperatures, snow depth and snow melt. 
   
   
 
