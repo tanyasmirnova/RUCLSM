@@ -71,7 +71,10 @@ Subroutines include:
           
   - soilprop - computes thermal diffusivity and diffusional and hydraulic conductivities.
   - tranf - compoutes transpiration function.
-  - vilka - this subroutine finds the solution of energy budget at the surface from the pre-computed table of saturated water vapor mixing ratio and estimated surface temperature. 
+  - vilka - this subroutine finds the solution of energy budget at the surface from the pre-computed table of saturated water vapor mixing ratio and estimated surface temperature.
+    - 'AVOST IN VILKA' means that the energy budget cannot be resolved, the most likely reason is that the input to RUC LSM is inconsistent or wrong.
+    - The computations will stop in WRF and MPAS, although they will continue in the UFS, but the points with AVOST will have bad values of skin temperature and water vapor mixing ratio.
+
   - soilvegin - this subroutine computes effective land and soil parameters in the grid cell from the weighted contribution of soil and land categories represented in the grid cell. 
   - sice - this subroutine is called for sea ice without accumulated snow on its surface.
      - it solves heat diffusion inside ice and energy budget at the surface of ice, computes skin temperature and temerature inside sea ice.
